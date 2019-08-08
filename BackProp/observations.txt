@@ -1,0 +1,71 @@
+Test case 1:
+
+	learning rate	: 0.5
+	Hidden layer                   No. of nodes
+	------------  				----------------
+	FullyConnectedLayer				8
+
+
+	batchsize 	: 20
+	number of epoch : 50
+	Seedvalue 	: 2
+
+Why Minimal Topology : Only one hidden layer is sufficient as the data is linearly seperable.
+
+
+Test case 2:
+
+	learning rate	: 0.5
+	Hidden layer                   No. of nodes
+	------------  				----------------
+	FullyConnectedLayer				8
+
+	
+	batchsize 	: 20
+	number of epoch : 50
+	Seedvalue 	: 2
+
+Why Minimal Topology : The data is not linearly separable, but can be seen as an accumulation of many linear 
+                       seperators, so one hidden layer will suffice.
+
+
+Test case 3:
+
+	learning rate	: 0.5
+	Hidden layer                   No. of nodes
+	------------  				----------------
+	FullyConnectedLayer				1000
+
+	
+	batchsize 	: 100
+	number of epoch : 15
+	Seedvalue 	: 2
+
+Why Minimal Topology : This is image data, but very simply separable unlike other classifications,so one hidden layer 
+						can do the job instead of using convolutional layers.
+
+Test case 4:
+
+	learning rate	: 0.5
+	Hidden layer                   No. of nodes and other Statistics
+	------------  				----------------
+	ConvolutionLayer			filtersize = [10,10] , numfilters = 10, stride = 4
+	AvgPoolingLayer				filtersize = [2,2], stride = 2
+	FlattenLayer
+	FullyConnectedLayer			No. of Nodes = 90
+
+
+	batchsize 	: 20
+	number of epoch : 12
+	Seedvalue	: 2
+
+Why Minimal Topology : This is image data and difficult to classify, so presence of conv layer is a must,
+						for faster updates AvgPoolLayer has been used, the rest of the architecture is a must.FlattenLayer should follow this , and finally one FullyConnected Layer.
+
+
+Observation : As seen above, for image classification convolution layer is necessary, because helps pick up patterns, 
+			  whereas in case of linearly separable data, only fully connected layer is sufficient. Also for simple 
+			  image classification (like MNIST) only fullyconnected layer also performs well, and as its updates are faster than Convolutional layer, it is handy to use in such cases.
+
+
+

@@ -1,0 +1,8 @@
+Plot.png observations:
+
+We can see that the no of moves till exit strictly decreases with increasing probability. This is expected as in lower probability regime, we allow more random moves rather than the optimal move. So the expected no of steps till exit is also much greater. In case p = 0.0, all the moves to be random.
+
+
+Path.png:
+
+We can clearly see that the path is not the optimal path. This is because we allow random moves with some probability along with the optimal move. So it takes more no of steps to exit. 

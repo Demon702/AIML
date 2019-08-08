@@ -1,0 +1,3 @@
+https://www.coursera.org/learn/neural-networks-deep-learning/lecture/Wh8NI/gradient-descent-for-neural-networks
+
+I have used the contents of this lecture by Andrew Ng for backpropagation of a fully connected layer.

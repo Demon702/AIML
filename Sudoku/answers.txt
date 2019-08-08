@@ -1,0 +1,88 @@
+Task 3 
+
+Q. Can we implement informed search techniques like A star for this Problem? Answer with respect to both path cost and heuristic. 
+
+Ans- In the sudoku problem, reaching the goal state is enough. We need not reach it in the shortest way possible. As for other informed searches taught in class, they doesn't fit in the scenario.
+
+Task 7
+
+Q. Why A* Algorithm? Possible Heuristic for Travelling Student Problem:
+Ans- A* algorithm gives the optimal path if the heuristic function is consistent. i.e, it satisfies the triangle inequality. We can use the euclidean distance from the destination as heuristic function. It satisfies the triangle inequality. It's based on the empirical thought that if we go to a point that is spatially nearer to the destination, we have better chances of getting the optimal path.
+
+Q. What would have been the number of nodes visited in case we used a simple Shortest Path Problem Algorithm like Dijikstra's?
+
+Ans- Implementing Dijikstra's algorithm is same as implementing A* search with null heuristic.
+Here are the no of nodes required in Dijikstra's algorithm:
+
+Number of nodes expanded for IIT: 80
+Number of nodes expanded for IIT: 26743
+
+
+Q. Also in case the problem would have required you to reach multiple nodes what possible heuristic can you come up with for A*?
+
+Ans- Suppose P is the list of goal states.
+
+Then we define the heuristic H(node) = min([distance of node from x for x in P])
+After we reach one goal state we will calculate the heuristic with the remaining nodes in P while pushing nodes in frontier.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

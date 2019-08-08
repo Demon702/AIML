@@ -1,0 +1,5 @@
+http://book.pythontips.com/en/latest/map_filter.html
+ 		This was used while map and reduce in python
+
+https://stackoverflow.com/questions/35516183/python-read-hex-from-file-into-list/35516257#35516257
+		This was used for formatting bytes to obtain hex strings.

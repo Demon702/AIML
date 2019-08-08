@@ -1,0 +1,8 @@
+https://atmos.washington.edu/~dennis/MatrixCalculus.pdf
+
+This was used to lookup matrix derivatives.
+
+
+https://docs.scipy.org/doc/numpy/reference/generated/numpy.concatenate.html
+
+This was used to lookup numpy concatenate

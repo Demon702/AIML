@@ -1,0 +1,38 @@
+Optimal Parameters----------------
+---------------------------------------
+Ridge Regression:
+_________________________________
+
+Min_SSE			:	205802301391.1326
+
+Learning_rate	:	0.00001
+
+Max_Iteration	:	30000
+
+Lambda_Used		:	12
+
+K				:	6
+
+
+
+Lasso Regression:
+__________________________________
+
+Min_SSE			:	168837182155.09927
+
+Learning_rate	:	N.A
+
+Max_Iteration	:	1000
+
+Lambda_Used		:	200000
+
+K				:	6
+
+
+
+Unusual observtions in Lasso compared to Ridge Regression:
+________________________________________________________________
+
+The final weight vectors in Lasso tend to be more sparse than Ridge regression i.e, many components of the weight vector are zero. Rhis can be explained from the graph. The contour of the original sse function tends to cut the the countour of the L1 norm at the corner points which are on the axis. Thus components tend to be zero. Also the optimal lambda in Lasso is much greater than Ridge regression. 
+
+Lasso gives sparse weight vectors. So we can discard those features whose corresponding weight vectors are zero. So it tends to extract the important features and the discard the less important features. So Lasso may be advantageous in cases when we focus on storing the important features.
